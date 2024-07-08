@@ -266,16 +266,16 @@ h3 {
 
 /* Mobile version styles */
 @media (max-width: 768px) {
-    .navbar {
-        padding: 5px 10px;
+  .navbar {
+        padding: 15px 30px; /* Increase padding for larger navbar */
     }
     
     .menu-icon, .lyrics-icon {
-        font-size: 20px;
+        font-size: 28px; /* Increase font size */
     }
 
     .logo {
-        height: 30px;
+        height: 50px; /* Increase logo size */
     }
 
     .container {
