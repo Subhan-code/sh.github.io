@@ -278,6 +278,7 @@ h3 {
     }
     .logo {
         height: 50px; /* Increase logo size */
+margin-left:10px;
     }
 
     .container {
