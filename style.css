@@ -132,6 +132,9 @@ body {
 .menu-icon{
     margin-left: 20px;
 }
+.lyrics-icon{
+    margin-right: 20px;
+}
 .menu-icon,
 .lyrics-icon {
     font-size: 24px;
@@ -253,9 +256,14 @@ h3 {
 
 .fa-solid:hover, .control-icon:hover {
     filter: brightness(40%);
+    transform: scale(1.2);
 }
-.fa-solid2{
+.fa-solid2:hover{
     margin-left: -4px;
+    transform: scale(1.2);
+}
+.fa-solid1:hover{
+    transform: scale(1.2);
 }
 .play-button {
     font-size: 44px;
@@ -278,7 +286,7 @@ h3 {
     }
     .logo {
         height: 50px; /* Increase logo size */
-margin-left:10px;
+        margin-left: 10px;
     }
 
     .container {
@@ -288,8 +296,8 @@ margin-left:10px;
 
     .player-img {
         margin-top: -20px;
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
     }
 
     .player-controls {
