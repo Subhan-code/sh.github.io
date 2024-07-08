@@ -93,35 +93,7 @@ body {
     }
 }
 
-.carousel {
-    overflow: hidden;
-    width: 600px; /* Adjust width as needed */
-    border: 2px solid #ccc;
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
 
-.carousel-track {
-    display: flex;
-    /* Remove transition to avoid transformations */
-}
-
-.carousel-item {
-    width: 100px; /* Fixed width of each item */
-    height: 100px; /* Fixed height of each item */
-    text-align: center;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.carousel-item img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain; /* Ensures the image fits within the 100px box */
-}
 .background {
     position: fixed;
     width: 200%;
@@ -177,6 +149,7 @@ body {
 .logo {
     height: 40px;
     object-fit: contain;
+    margin-left: -25px;
 }
 
 .container {
@@ -260,29 +233,73 @@ h3 {
     display: flex;
     justify-content: space-between;
 }
-
 .player-controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     position: relative;
-    top: -15px;
-    left: 120px;
+    top: -30px;
+    left: 103px;
     width: 200px;
 }
 
-.fa-solid {
+.control-icon, .fa-solid {
     font-size: 30px;
     color: #000000;
-    margin-right: 30px;
     cursor: pointer;
     user-select: none;
     transition: all 0.3s ease;
 }
 
-.fa-solid:hover {
+.fa-solid:hover, .control-icon:hover {
     filter: brightness(40%);
 }
-
+.fa-solid2{
+    margin-left: -4px;
+}
 .play-button {
     font-size: 44px;
     position: relative;
     top: 3px;
+}
+
+
+/* Mobile version styles */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 5px 10px;
+    }
+    
+    .menu-icon, .lyrics-icon {
+        font-size: 20px;
+    }
+
+    .logo {
+        height: 30px;
+    }
+
+    .container {
+        height: 200px; /* Increased height for mobile version */
+        width: 300px;
+    }
+
+    .player-img {
+        margin-top: 100px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .player-controls {
+        top: -20px;
+        left: 80px;
+        width: 150px;
+    }
+
+    .control-icon, .fa-solid {
+        font-size: 20px;
+    }
+
+    .play-button {
+        font-size: 30px;
+    }
 }
